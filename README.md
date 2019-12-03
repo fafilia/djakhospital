@@ -5,4 +5,5 @@ Dependencies
 - Flask
 - altair
 - flask-paginate
-
+- Jinja2
+- requests
