@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daftar Rumah Sakit di Provinsi DKI Jakarta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+
+<body>
+    <header>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark darkaqua">
+                    <i class="large material-icons md-dark">local_hospital</i>
+                    <a href="{{ url_for('.overview') }}" class="navbar-brand"> DjakHospital</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link">Beranda</a></li>
+                                <li class="nav-item"><a href="{{ url_for('.kesehatan') }}" class="nav-link">Kesehatan</a></li>
+                                <li class="nav-item"><a href="{{ url_for('.overview') }}" class="nav-link">Data</a></li>
+                        </ul>           
+                    </div>
+            </nav>
+    </header>
+    <div class="jumbotron">
+            <div class="row">
+                    <h2 class='lead'>Fasilitas RS</h2>
+            <br>
+                    <div class=page>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            {{ new_tables|safe }}
+                        </table>
+                    </div>
+                    {{ pagination.links }}
+                    </div>
+            </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</html>

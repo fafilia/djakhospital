@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DjakHospital</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+
+<body>
+    <header>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark darkaqua">
+                    <i class="large material-icons md-dark">local_hospital</i>
+                    <a href="{{ url_for('index') }}" class="navbar-brand"> DjakHospital</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link">Beranda</a></li>
+                                <li class="nav-item"><a href="{{ url_for('.kesehatan') }}" class="nav-link">Kesehatan</a></li>
+                                <li class="nav-item"><a href="{{ url_for('.overview') }}" class="nav-link">Data</a></li>
+                            </ul>           
+                    </div>
+            </nav>
+    </header>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-10 col-lg-6 col-sm-10">
+                <h1 class="display-4">Djakarta Hospital</h1>
+                <p class="lead">DjakHospital adalah dashboard untuk menampilkan 
+                    jumlah fasilitas kesehatan berupa Rumah Sakit dan Puskesmas yang ada pada provinsi DKI 
+                    Jakarta yang meliputi wilayah Jakarta Pusat, Jakarta Utara, 
+                    Jakarta Selatan, Jakarta Barat, Jakarta Timur, dan Kepulauan 
+                    Seribu. Dashboard ini juga memberikan informasi mengenai record 
+                    kesehatan penduduk meliputi kesehatan bayi dan balita serta 
+                    kesehatan keluarga berencana.</p>
+            </div>
+            <div class="col-md-10 col-lg-6 offset-lg-0 col-sm-10  mt-2">
+                <div class="plot" ><iframe src="{{ url_for('map') }}", width="600px", height="400px"></iframe></div>
+            </div>
+            <br/>
+            <br/>
+        </div>
+        <br>
+        <div class="row mt-2">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card card-stats">
+                        <div class="card-header card-header-warning card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">local_hospital</i>
+                            </div>
+                            <p class="card-category">Rumah Sakit Umum</p>
+                            <h3 class="card-title">{{ total['umum'] }}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-warning card-header-icon">
+                                <div class="card-icon">
+                                    <i class="material-icons">local_hospital</i>
+                                </div>
+                                <p class="card-category">Rumah Sakit Khusus</p>
+                                <h3 class="card-title">{{ total['khusus'] }}</h3>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-warning card-header-icon">
+                                <div class="card-icon">
+                                    <i class="material-icons">local_hospital</i>
+                                </div>
+                                <p class="card-category">Puskesmas</p>
+                                <h3 class="card-title">{{ total['puskes'] }}</h3>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-warning card-header-icon">
+                                <div class="card-icon">
+                                    <i class="material-icons">local_hospital</i>
+                                </div>
+                                <p class="card-category">Jumlah Rumah Sakit</p>
+                                <h3 class="card-title">{{ fasilitas }}</h3>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <br>
+        <br>
+        <div class="row mt-2">
+            <div class="col-md-10 col-lg-7 col-sm-10">
+                <h2 class='lead'>Jumlah Rumah Sakit per Wilayah</h2>
+                <div class="plot-area" id="tot_rs"></div>
+            </div>
+            <div class="col-md-10 col-lg-5 col-sm-10">
+                <h2 class='lead'>Total Kamar per Tipe Kelas</h2>
+                <div class="plot-area" id="kelas_rs"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- This for the bootstrap and rendering altair -->
+<!-- Don't need to change these -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.3.1/vega.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.6.0/vega-lite.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.20.0/vega-embed.min.js"></script>
+
+<!-- This part is script for rendering the plot (Altair) -->
+<script type="text/javascript">
+    function parse(url, div) {
+        var opt = {
+            mode: "vega-lite",
+            renderer: "svg",
+            actions: { export: false, source: false, editor: false }
+        };
+        //var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
+
+        vegaEmbed(div, url, opt).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    }
+    // parse("/", "#map_vis") // This is the path you put the plot, if nessesary you only need to change this at all part 
+    parse("/ch_totrs", "#tot_rs")
+    parse("/ch_kelasrs", "#kelas_rs")
+    parse("/ch_imun", "#vis_imun")
+</script>
+
+</html>
