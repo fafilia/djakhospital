@@ -1,0 +1,157 @@
+tahun ,antigen,wilayah,jumlah_bayi
+2016,HB0,Kepulauan Seribu,466
+2016,HB0,Jakarta Selatan,33202
+2016,HB0,Jakarta Timur,47333
+2016,HB0,Jakarta Pusat,12653
+2016,HB0,Jakarta Barat,42185
+2016,HB0,Jakarta Utara,28819
+2016,BCG,Kepulauan Seribu,485
+2016,BCG,Jakarta Selatan,34715
+2016,BCG,Jakarta Timur,50275
+2016,BCG,Jakarta Pusat,13830
+2016,BCG,Jakarta Barat,42779
+2016,BCG,Jakarta Utara,30366
+2016,POLIO 1,Kepulauan Seribu,485
+2016,POLIO 1,Jakarta Selatan,35742
+2016,POLIO 1,Jakarta Timur,49889
+2016,POLIO 1,Jakarta Pusat,13498
+2016,POLIO 1,Jakarta Barat,42286
+2016,POLIO 1,Jakarta Utara,30687
+2016,DPT-HB-HIB 1,Kepulauan Seribu,524
+2016,DPT-HB-HIB 1,Jakarta Selatan,35683
+2016,DPT-HB-HIB 1,Jakarta Timur,51318
+2016,DPT-HB-HIB 1,Jakarta Pusat,12625
+2016,DPT-HB-HIB 1,Jakarta Barat,43271
+2016,DPT-HB-HIB 1,Jakarta Utara,31310
+2016,POLIO 2,Kepulauan Seribu,524
+2016,POLIO 2,Jakarta Selatan,35467
+2016,POLIO 2,Jakarta Timur,51223
+2016,POLIO 2,Jakarta Pusat,12487
+2016,POLIO 2,Jakarta Barat,42883
+2016,POLIO 2,Jakarta Utara,31175
+2016,DPT-HB-HIB 2,Kepulauan Seribu,462
+2016,DPT-HB-HIB 2,Jakarta Selatan,35460
+2016,DPT-HB-HIB 2,Jakarta Timur,51937
+2016,DPT-HB-HIB 2,Jakarta Pusat,13436
+2016,DPT-HB-HIB 2,Jakarta Barat,42611
+2016,DPT-HB-HIB 2,Jakarta Utara,31031
+2016,POLIO 3,Kepulauan Seribu,462
+2016,POLIO 3,Jakarta Selatan,34974
+2016,POLIO 3,Jakarta Timur,51394
+2016,POLIO 3,Jakarta Pusat,13375
+2016,POLIO 3,Jakarta Barat,42335
+2016,POLIO 3,Jakarta Utara,30996
+2016,DPT-HB-HIB 3,Kepulauan Seribu,477
+2016,DPT-HB-HIB 3,Jakarta Selatan,35052
+2016,DPT-HB-HIB 3,Jakarta Timur,51147
+2016,DPT-HB-HIB 3,Jakarta Pusat,13536
+2016,DPT-HB-HIB 3,Jakarta Barat,42409
+2016,DPT-HB-HIB 3,Jakarta Utara,30953
+2016,POLIO 4,Kepulauan Seribu,477
+2016,POLIO 4,Jakarta Selatan,33719
+2016,POLIO 4,Jakarta Timur,51332
+2016,POLIO 4,Jakarta Pusat,13263
+2016,POLIO 4,Jakarta Barat,59521
+2016,POLIO 4,Jakarta Utara,30931
+2016,IPV,Kepulauan Seribu,0
+2016,IPV,Jakarta Selatan,0
+2016,IPV,Jakarta Timur,0
+2016,IPV,Jakarta Pusat,0
+2016,IPV,Jakarta Barat,567
+2016,IPV,Jakarta Utara,0
+2016,CAMPAK,Kepulauan Seribu,465
+2016,CAMPAK,Jakarta Selatan,34359
+2016,CAMPAK,Jakarta Timur,51542
+2016,CAMPAK,Jakarta Pusat,13099
+2016,CAMPAK,Jakarta Barat,42824
+2016,CAMPAK,Jakarta Utara,29959
+2016,IDL,Kepulauan Seribu,443
+2016,IDL,Jakarta Selatan,34962
+2016,IDL,Jakarta Timur,51028
+2016,IDL,Jakarta Pusat,13113
+2016,IDL,Jakarta Barat,43318
+2016,IDL,Jakarta Utara,41049
+2016,BOOSTER DPT-HB-HIB,Kepulauan Seribu,388
+2016,BOOSTER DPT-HB-HIB,Jakarta Selatan,22652
+2016,BOOSTER DPT-HB-HIB,Jakarta Timur,33535
+2016,BOOSTER DPT-HB-HIB,Jakarta Pusat,8791
+2016,BOOSTER DPT-HB-HIB,Jakarta Barat,40145
+2016,BOOSTER DPT-HB-HIB,Jakarta Utara,21690
+2016,BOOSTER CAMPAK,Kepulauan Seribu,328
+2016,BOOSTER CAMPAK,Jakarta Selatan,19701
+2016,BOOSTER CAMPAK,Jakarta Timur,31819
+2016,BOOSTER CAMPAK,Jakarta Pusat,7614
+2016,BOOSTER CAMPAK,Jakarta Barat,37584
+2016,BOOSTER CAMPAK,Jakarta Utara,18262
+2017,HEPATITIS B,Jakarta Barat,48858
+2017,HEPATITIS B,Jakarta Timur,50623
+2017,HEPATITIS B,Jakarta Selatan,40199
+2017,HEPATITIS B,Jakarta Pusat,13784
+2017,HEPATITIS B,Jakarta Utara,25449
+2017,HEPATITIS B,Kepulauan Seribu,476
+2017,BCG,Jakarta Barat,48086
+2017,BCG,Jakarta Timur,55067
+2017,BCG,Jakarta Selatan,39885
+2017,BCG,Jakarta Pusat,13939
+2017,BCG,Jakarta Utara,30394
+2017,BCG,Kepulauan Seribu,514
+2017,POLIO 1,Jakarta Barat,47716
+2017,POLIO 1,Jakarta Timur,54946
+2017,POLIO 1,Jakarta Selatan,39335
+2017,POLIO 1,Jakarta Pusat,13835
+2017,POLIO 1,Jakarta Utara,30664
+2017,POLIO 1,Kepulauan Seribu,513
+2017,POLIO 2,Jakarta Barat,47611
+2017,POLIO 2,Jakarta Timur,52474
+2017,POLIO 2,Jakarta Selatan,39469
+2017,POLIO 2,Jakarta Pusat,13748
+2017,POLIO 2,Jakarta Utara,31050
+2017,POLIO 2,Kepulauan Seribu,490
+2017,POLIO 3,Jakarta Barat,47036
+2017,POLIO 3,Jakarta Timur,52535
+2017,POLIO 3,Jakarta Selatan,39673
+2017,POLIO 3,Jakarta Pusat,13526
+2017,POLIO 3,Jakarta Utara,31039
+2017,POLIO 3,Kepulauan Seribu,493
+2017,POLIO 4,Jakarta Barat,46829
+2017,POLIO 4,Jakarta Timur,53222
+2017,POLIO 4,Jakarta Selatan,40203
+2017,POLIO 4,Jakarta Pusat,13614
+2017,POLIO 4,Jakarta Utara,30697
+2017,POLIO 4,Kepulauan Seribu,479
+2017,IPV,Jakarta Barat,39251
+2017,IPV,Jakarta Timur,33973
+2017,IPV,Jakarta Selatan,27531
+2017,IPV,Jakarta Pusat,8697
+2017,IPV,Jakarta Utara,27104
+2017,IPV,Kepulauan Seribu,473
+2017,DPT-HB-HIB 1,Jakarta Barat,47800
+2017,DPT-HB-HIB 1,Jakarta Timur,55963
+2017,DPT-HB-HIB 1,Jakarta Selatan,39723
+2017,DPT-HB-HIB 1,Jakarta Pusat,13785
+2017,DPT-HB-HIB 1,Jakarta Utara,31197
+2017,DPT-HB-HIB 1,Kepulauan Seribu,486
+2017,DPT-HB-HIB 2,Jakarta Barat,47173
+2017,DPT-HB-HIB 2,Jakarta Timur,52948
+2017,DPT-HB-HIB 2,Jakarta Selatan,39648
+2017,DPT-HB-HIB 2,Jakarta Pusat,13537
+2017,DPT-HB-HIB 2,Jakarta Utara,31027
+2017,DPT-HB-HIB 2,Kepulauan Seribu,466
+2017,DPT-HB-HIB 3,Jakarta Barat,46722
+2017,DPT-HB-HIB 3,Jakarta Timur,55600
+2017,DPT-HB-HIB 3,Jakarta Selatan,40407
+2017,DPT-HB-HIB 3,Jakarta Pusat,13816
+2017,DPT-HB-HIB 3,Jakarta Utara,30692
+2017,DPT-HB-HIB 3,Kepulauan Seribu,480
+2017,CAMPAK,Jakarta Barat,46369
+2017,CAMPAK,Jakarta Timur,57562
+2017,CAMPAK,Jakarta Selatan,38972
+2017,CAMPAK,Jakarta Pusat,13474
+2017,CAMPAK,Jakarta Utara,28529
+2017,CAMPAK,Kepulauan Seribu,455
+2017,IDL,Jakarta Barat,46382
+2017,IDL,Jakarta Timur,56966
+2017,IDL,Jakarta Selatan,38808
+2017,IDL,Jakarta Pusat,13120
+2017,IDL,Jakarta Utara,31955
+2017,IDL,Kepulauan Seribu,455
